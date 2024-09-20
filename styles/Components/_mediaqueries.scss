@@ -1,0 +1,36 @@
+@media screen and (min-width: 992px) {
+  .nav .bi-x-lg,
+  .bi-list,
+  .gray-dispaly {
+    display: none;
+  }
+
+  .nav-items .underline {
+    display: none;
+  }
+  .nav-menu {
+    position: static;
+    flex-direction: row;
+    height: 100%;
+    width: unset;
+    flex-grow: 0.92;
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    // font-weight: 400;
+  }
+
+  .nav-menu-ellips {
+    margin: 0;
+    order: 1;
+    padding: 1rem;
+
+    &-text {
+      font-size: 1rem;
+    }
+  }
+}
