@@ -1,6 +1,6 @@
 .nav {
   height: 90px;
-  background: map-get($Colors, clr-orang-light);
+  background: map-get($Colors, clr-orange-light);
   display: block;
   position: fixed;
   width: 100%;
@@ -34,7 +34,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    background: map-get($Colors, clr-orang-light);
+    background: map-get($Colors, clr-orange-light);
     align-items: center;
     transition: 0.4s;
     z-index: 20;
