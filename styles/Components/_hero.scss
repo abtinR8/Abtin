@@ -1,0 +1,72 @@
+.under-navbar {
+  height: 90px;
+  background: map-get($Colors, clr-orange-light);
+}
+
+.hero {
+  max-height: calc(100svh - 90px);
+  height: calc(100vh - 90px);
+  background: linear-gradient(
+    map-get($Colors, clr-orange-light),
+    map-get($Colors, clr-orange-lighter),
+    map-get($Colors, clr-orange-light)
+  );
+}
+
+.hero .img-container {
+  position: relative;
+  height: 350px;
+}
+
+.hero .img-fluid {
+  position: absolute;
+  max-height: 28rem;
+  top: 50%;
+  right: 50%;
+}
+
+.hero .img-character {
+  max-width: 60%;
+  transform: translate(50%, -50%);
+}
+
+.hero .honeycomb {
+  max-width: 80%;
+  transform: translate(50%, -46%);
+  opacity: 0.8;
+}
+
+.Shape1 {
+  max-width: 65px;
+  transform: translate(-110%, -150%);
+}
+.Shape2 {
+  max-width: 50px;
+  transform: translate(200%, 150%);
+}
+
+.text-container h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: map-get($Colors, clr-blue-dark);
+}
+
+.text-container span {
+  font-size: 3rem;
+  color: map-get($Colors, clr-blue);
+}
+
+.text-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.text-container h3 {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1rem;
+}

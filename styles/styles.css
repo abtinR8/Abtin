@@ -338,7 +338,9 @@ ul {
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   transition: 0.3s;
+  z-index: 1030;
 }
 .nav-container {
   height: 90px;
@@ -350,6 +352,7 @@ ul {
   align-items: center;
   transition: 0.3s;
   position: relative;
+  z-index: -1000;
 }
 .nav-img {
   max-height: 100%;
@@ -381,6 +384,7 @@ ul {
   color: #f6481c;
   align-self: center;
   font-size: 1.25rem;
+  padding: 0 0.5rem;
 }
 .nav-items {
   display: flex;
@@ -431,7 +435,80 @@ ul {
   height: 60px;
 }
 
+.under-navbar {
+  height: 90px;
+  background: #e9c46a;
+}
+
+.hero {
+  max-height: calc(100svh - 90px);
+  height: calc(100vh - 90px);
+  background: linear-gradient(#e9c46a, #ffe873, #e9c46a);
+}
+
+.hero .img-container {
+  position: relative;
+  height: 350px;
+}
+
+.hero .img-fluid {
+  position: absolute;
+  max-height: 28rem;
+  top: 50%;
+  right: 50%;
+}
+
+.hero .img-character {
+  max-width: 60%;
+  transform: translate(50%, -50%);
+}
+
+.hero .honeycomb {
+  max-width: 80%;
+  transform: translate(50%, -46%);
+  opacity: 0.8;
+}
+
+.Shape1 {
+  max-width: 65px;
+  transform: translate(-110%, -150%);
+}
+
+.Shape2 {
+  max-width: 50px;
+  transform: translate(200%, 150%);
+}
+
+.text-container h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #023047;
+}
+
+.text-container span {
+  font-size: 3rem;
+  color: #046393;
+}
+
+.text-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.text-container h3 {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 992px) {
+  .nav {
+    z-index: unset;
+  }
   .nav .bi-x-lg,
   .bi-list,
   .gray-dispaly {
@@ -461,5 +538,32 @@ ul {
   }
   .nav-menu-ellips-text {
     font-size: 1rem;
+  }
+  .hero .img-fluid {
+    position: absolute;
+    max-height: 35rem;
+    top: 50%;
+    right: 50%;
+  }
+  .hero .img-character {
+    max-width: unset;
+  }
+  .hero .img-container {
+    max-height: calc(100svh - 90px);
+    height: 68vh;
+  }
+  .text-container h1 {
+    font-size: 3.5rem;
+  }
+  .text-container span {
+    font-size: 5rem;
+  }
+  .Shape1 {
+    max-width: 70px;
+    transform: translate(-200%, -300%);
+  }
+  .Shape2 {
+    max-width: 50px;
+    transform: translate(400%, 330%);
   }
 }/*# sourceMappingURL=styles.css.map */

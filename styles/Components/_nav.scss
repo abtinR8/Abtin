@@ -6,7 +6,9 @@
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   transition: 0.3s;
+  z-index: 1030;
 
   &-container {
     height: 90px;
@@ -18,6 +20,7 @@
     align-items: center;
     transition: 0.3s;
     position: relative;
+    z-index: -1000;
   }
 
   &-img {
@@ -51,6 +54,7 @@
         color: map-get($Colors, clr-orange-dark);
         align-self: center;
         font-size: 1.25rem;
+        padding: 0 0.5rem;
       }
     }
   }
@@ -101,13 +105,13 @@
     transform: translate(-70%, -50%);
   }
 
-  &-fix{
+  &-fix {
     height: 60px;
     opacity: 0.98;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0, 0.15);
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15);
   }
 
-  &-container-fix{
+  &-container-fix {
     height: 60px;
   }
 }
