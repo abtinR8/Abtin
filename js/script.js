@@ -16,7 +16,6 @@ function changeWelcomeText() {
   if (window.innerWidth >= 992) {
     welcomeText.innerText = "Welcome to my page";
   } else {
-    const br = document.createElement("br");
     welcomeText.innerText = `Welcome to my page \n « Abtin »`;
   }
 }
@@ -37,6 +36,7 @@ function setNavbar() {
 
 navToggle.addEventListener("click", showMenu);
 closeIcon.addEventListener("click", showMenu);
+grayDispaly.addEventListener("click",showMenu);
 window.addEventListener("DOMContentLoaded", changeWelcomeText);
 window.addEventListener("resize", changeWelcomeText);
 window.addEventListener("scroll", setNavbar);
