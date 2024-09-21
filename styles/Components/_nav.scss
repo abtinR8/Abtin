@@ -2,6 +2,11 @@
   height: 90px;
   background: map-get($Colors, clr-orang-light);
   display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
 
   &-container {
     height: 90px;
@@ -11,6 +16,8 @@
     margin-right: auto;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+    position: relative;
   }
 
   &-img {
@@ -89,8 +96,18 @@
     font-size: 1.75rem;
     cursor: pointer;
     position: absolute;
-    top: 45px;
+    top: 50%;
     right: 0;
     transform: translate(-70%, -50%);
+  }
+
+  &-fix{
+    height: 60px;
+    opacity: 0.98;
+    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0, 0.15);
+  }
+
+  &-container-fix{
+    height: 60px;
   }
 }

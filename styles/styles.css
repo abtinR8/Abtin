@@ -334,6 +334,11 @@ ul {
   height: 90px;
   background: #e9c46a;
   display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
 }
 .nav-container {
   height: 90px;
@@ -343,6 +348,8 @@ ul {
   margin-right: auto;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
+  position: relative;
 }
 .nav-img {
   max-height: 100%;
@@ -411,9 +418,17 @@ ul {
   font-size: 1.75rem;
   cursor: pointer;
   position: absolute;
-  top: 45px;
+  top: 50%;
   right: 0;
   transform: translate(-70%, -50%);
+}
+.nav-fix {
+  height: 60px;
+  opacity: 0.98;
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+.nav-container-fix {
+  height: 60px;
 }
 
 @media screen and (min-width: 992px) {
@@ -442,6 +457,7 @@ ul {
     margin: 0;
     order: 1;
     padding: 1rem;
+    transition: 0.3s;
   }
   .nav-menu-ellips-text {
     font-size: 1rem;
