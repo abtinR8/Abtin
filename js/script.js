@@ -38,9 +38,6 @@ function initialLoading() {
     shape2.style.cssText = ` opacity: 1; transform: translate(400%, 330%);`;
   }
   heroText.style.cssText = ` opacity: 1;transform: unset;`;
-  setTime(function () {
-    honeyDelay.classList.remove();
-  }, 1000);
 }
 
 function setNavbar() {

@@ -41,9 +41,8 @@
 
   // ---hero---
 
-  .hero{
+  .hero {
     max-height: calc(100svh - 90px);
-
   }
   .hero .img-fluid {
     position: absolute;
@@ -75,5 +74,88 @@
   .Shape2 {
     max-width: 50px;
     transform: translate(400%, 600%);
+  }
+
+  // summary
+  .summary {
+    grid-template-columns: 0.6fr 1fr 1fr 0.6fr;
+    row-gap: 3rem;
+
+    &-head h5 {
+      font-size: 1.25rem;
+    }
+
+    &-introduce {
+      padding: 0 6rem;
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-quote {
+      // column-gap: 4rem;
+      grid-row: 3/4;
+      grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+
+      &-img {
+        grid-column: 2/3;
+        justify-self: end;
+        padding:0 2rem;
+        max-width: 80%;
+        background: #fff3cd;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+      }
+
+      figure {
+        grid-column: 3/4;
+        align-self: end;
+        text-align: unset;
+        margin-bottom: 0;
+        padding-top: 15%;
+        padding-left: 2rem;
+        background: #fff3cd;
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+
+    &-about {
+      grid-row: 4/5;
+      display: grid;
+      column-gap: 2rem;
+
+      img {
+        grid-column: 2/3;
+        max-width: 100%;
+      }
+
+      &-text {
+        grid-column: 3/4;
+        grid-row: 4/5;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+        line-height: 2.2;
+        font-weight: 300;
+      }
+    }
+  }
+  .about-img {
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 }

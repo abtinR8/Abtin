@@ -1,7 +1,9 @@
 @import "normalize/normalize-css" ;
 @import "CDN/CDNs.scss" ;
+@import "./fonts/fonts";
 @import "Components/variables" ;
 @import "Components/general";
 @import "Components/nav";
 @import "Components/hero";
+@import "Components/summary";
 @import "Components/mediaqueries";
