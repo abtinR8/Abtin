@@ -41,6 +41,10 @@
 
   // ---hero---
 
+  .hero{
+    max-height: calc(100svh - 90px);
+
+  }
   .hero .img-fluid {
     position: absolute;
     max-height: 35rem;
@@ -66,10 +70,10 @@
 
   .Shape1 {
     max-width: 70px;
-    transform: translate(-200%, -300%);
+    transform: translate(-400%, -300%);
   }
   .Shape2 {
     max-width: 50px;
-    transform: translate(400%, 330%);
+    transform: translate(400%, 600%);
   }
 }
