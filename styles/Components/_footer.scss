@@ -1,0 +1,28 @@
+.footer{
+background: map-get($Colors, clr-footer );
+height: 12rem;
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    padding-top: 3rem;
+    justify-content: center;
+    .bi{
+        color: map-get($Colors, clr-orange-light);
+        font-size: 1.5rem;
+        transition: 0.2s;
+    }
+
+    .bi:hover{
+        color: map-get($Colors, clr-orange-lighter);
+        font-size: 1.5rem;
+    }
+}
+
+.text{
+    color: map-get($Colors, clr-orange-light);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+}
