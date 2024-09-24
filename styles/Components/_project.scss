@@ -97,8 +97,9 @@
     transition: 0.5s;
 
     p {
-      color: map-get($Colors, clr-white);
       font-size: 1.25rem;
+      color: map-get($Colors, clr-white );
+
     }
   }
 }
