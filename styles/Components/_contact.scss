@@ -39,7 +39,7 @@
   }
 
   &-box {
-    background: #25363e;
+    background: map-get($Colors, clr-contact-bg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,14 +49,14 @@
     width: 80%;
     max-width: 25rem;
     aspect-ratio: 1/1;
-  
+
     h2 {
-      color: #b1dbe1;
+      color: map-get($Colors, clr-contact-text);
       margin-bottom: 15%;
     }
 
     .icon {
-      background: #b1dbe1;
+      background: map-get($Colors, clr-contact-text);
       display: inline-block;
       padding: 0.5rem;
       margin-right: 1rem;
@@ -66,18 +66,18 @@
       border-radius: 50%;
     }
 
-    .bi{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+    .bi {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     span {
-      color: #b1dbe1;
+      color: map-get($Colors, clr-contact-text);
     }
 
     p {
-      color: #b1dbe1;
+      color: map-get($Colors, clr-contact-text);
     }
   }
 
@@ -85,20 +85,19 @@
     display: flex;
     margin-bottom: 1rem;
   }
-  
+
   .email {
     display: flex;
     margin-bottom: 1rem;
-    .bi{
-        font-size: 1.25rem;
+    .bi {
+      font-size: 1.25rem;
     }
   }
 
-  .github{
+  .github {
     display: flex;
-    .bi{
-        font-size: 1.5rem;
+    .bi {
+      font-size: 1.5rem;
     }
   }
 }
-

@@ -626,7 +626,7 @@ body {
   margin-top: 1.5rem;
   transform: translateX(-20%);
   transition: 0.3s;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .text-container h3 {
@@ -902,6 +902,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  font-family: "vazir";
 }
 
 @media screen and (min-width: 992px) {
