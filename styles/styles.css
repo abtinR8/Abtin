@@ -511,8 +511,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
   font-weight: 300;
+}
+.nav-items a {
+  font-size: 1.25rem;
 }
 .nav .bi-x-lg {
   font-size: 1.5rem;
@@ -880,7 +882,7 @@ body {
 
 .footer {
   background: #222222;
-  height: 12rem;
+  height: 10rem;
 }
 .footer .icons {
   display: flex;
